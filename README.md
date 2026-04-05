@@ -19,18 +19,9 @@ data/
 ├── estoque.xlsx                # Fonte (raw data)
 ├── planilha_final_atualizada.xlsx  # Camada Silver
 └── estoque_mg.xlsx             # Camada Gold
-
-src/
 ├── etl.py                      # Pipeline de transformação
-└── app.py                      # Aplicação Streamlit
+└── main.py                      # Aplicação Streamlit
 ```
-
-### 🔹 Camadas de Dados
-
-* **Bronze** → Dados brutos (Excel)
-* **Silver** → Dados tratados e limpos
-* **Gold** → Dataset final para análise
-
 ---
 
 ## ⚙️ Tecnologias Utilizadas
@@ -81,52 +72,6 @@ A aplicação permite:
 * 📥 Exportar:
 
   * Download em Excel formatado
-
----
-
-## ▶️ Como Executar
-
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-```
-
-### 2. Crie o ambiente virtual
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-.venv\Scripts\activate     # Windows
-```
-
-### 3. Instale as dependências
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Execute o ETL
-
-```bash
-python src/etl.py
-```
-
-### 5. Execute o app
-
-```bash
-streamlit run src/app.py
-```
-
----
-
-## 📌 Possíveis Melhorias
-
-* 🔄 Orquestração com Airflow
-* ☁️ Integração com Data Lake
-* ⚡ Migração para PySpark
-* 📊 Dashboard em Power BI / Fabric
 
 ---
 
